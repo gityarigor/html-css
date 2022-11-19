@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*  SELETORES PERSONALIZADOS
+        #   = id
+        .   = class
+        :   = pseudo-class
+        ::  = pseudoelemento
+        >   = children
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: #c90e0e;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: #a34224;
+        }
+
+        a:hover {
+            color: #000000;
+            text-decoration: underline;
+        }
+
+        .especial {
+            background-color: rgb(185, 130, 130);
+        }
+
+        a:active {
+            color: #33a324;
+        }
+
+        a::before {
+            content: '⇨ ';
+        }
+
+        a::after {
+            content: ' ⇦';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.twitch.tv/yarigor" target="_blank" rel="external" class="especial">Canal da Twitch</a></li>
+        <li><a href="https://www.youtube.com/channel/UCCdMFZqYW8D1KOyaXlgYbCw" target="_blank" rel="external">Canal do Youtube</a></li>
+        <li><a href="https://www.twitch.tv" target="_blank" rel="external">Site da Twitch</a></li>
+    </ul>
+</body>
+</html>
