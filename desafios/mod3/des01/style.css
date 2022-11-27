@@ -44,12 +44,12 @@ header a:hover {
     text-decoration: underline;
 }
 
-div.verso1 {
+p.verso1 {
     color: var(--cor1);
     font-family: var(--fonte-versos);    
 }
 
-div.verso2 {
+p.verso2 {
     color: var(--cor2);
     font-family: var(--fonte-versos);
     background-image: url(imagens/background001.jpg); 
@@ -58,18 +58,27 @@ div.verso2 {
     background-repeat: no-repeat;   
 }
 
-div.verso3-4 {
+p.verso3 {
     color: var(--cor1);
     font-family: var(--fonte-versos);    
 }
 
-div.verso5 {
+p.verso4 {
     color: var(--cor1);
     font-family: var(--fonte-versos);    
 }
 
-div.verso6-7 {
+p.verso5 {
     color: var(--cor1);
+    font-family: var(--fonte-versos);    
+}
+
+p.verso6 {
+    color: var(--cor1);
+    font-family: var(--fonte-versos);    
+}
+
+p.verso7 {plor: var(--cor1);
     font-family: var(--fonte-versos);    
 }
 
