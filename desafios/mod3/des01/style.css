@@ -12,6 +12,11 @@
     --fonte-versos: 'Sriracha', cursive;
 }
 
+html, body {
+    min-height: 100%;
+    background-color: #a9a9a9;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -19,72 +24,58 @@
 
 header {
     background-color: var(--cor1);
-    padding: 50px;
 }
 
 header h1 {
+    padding-top: 50px;
     font-family: var(--fonte-titulo);
     color: var(--cor2);
     font-size: 3.5em;
     text-align: center;
+    font-variant: small-caps;
 }
 
 header p {
     color: var(--cor2);
     text-align: center;
+    padding-bottom: 50px;
 }
 
-header a {
+header a, footer a {
     color: var(--cor2);
     text-decoration: none;
     font-family: var(--fonte-titulo);
-    font-size: 1.3em;
+    font-weight: bolder;
 }
-header a:hover {
+header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
-p.verso1 {
-    color: var(--cor1);
-    font-family: var(--fonte-versos);    
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
 }
 
-p.verso2 {
+section.normal {
+    background-color: var(--cor2);
+    color: var(--cor1);
+}
+
+section.imagem {
+    background-color:rgb(51, 51, 51);
     color: var(--cor2);
-    font-family: var(--fonte-versos);
-    background-image: url(imagens/background001.jpg); 
-    background-size: 100%;
-    background-position: right center;
-    background-repeat: no-repeat;   
 }
 
-p.verso3 {
-    color: var(--cor1);
-    font-family: var(--fonte-versos);    
-}
-
-p.verso4 {
-    color: var(--cor1);
-    font-family: var(--fonte-versos);    
-}
-
-p.verso5 {
-    color: var(--cor1);
-    font-family: var(--fonte-versos);    
-}
-
-p.verso6 {
-    color: var(--cor1);
-    font-family: var(--fonte-versos);    
-}
-
-p.verso7 {plor: var(--cor1);
-    font-family: var(--fonte-versos);    
+section.imagem > p {
+    width: 400px;
+    background-color: #00000052;
 }
 
 footer {
     background-color: var(--cor1);
     color: var(--cor2);
-    padding: 5px;
+    padding: 10px;
     text-align: center;
 }
